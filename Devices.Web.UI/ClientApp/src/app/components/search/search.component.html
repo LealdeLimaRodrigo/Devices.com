@@ -1,0 +1,11 @@
+<div class="row mt-3 mb-4 search-row-back mx-1">
+    <div class="col-8 col-md-11 mt-2 mb-2">
+        <div class="form-group has-search">
+            <span class="bi-search form-control-feedback"></span>
+            <input type="text" name="search" class="form-control" placeholder="Search" [ngModel]="devSearch" (ngModelChange)="searchDevices($event)">
+        </div>
+    </div>
+    <div class="col-2 col-md-1 mt-2 mb-2 d-flex align-items-center justify-content-center">        
+        <button (click)="checkEnabled()" class="button-link">Cancel</button>
+    </div>
+</div>

@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32210.238
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{480881C6-84C0-48DB-8A08-D56A1E71D0D4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Devices.Web.API", "Devices.Web.API\Devices.Web.API.csproj", "{432FDCB2-9333-4BEE-91E5-3D9F48361F94}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{D8BABF33-7834-4A29-95FB-2B1D47BE0CE8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Devices.Web.UI", "Devices.Web.UI\Devices.Web.UI.csproj", "{CD7B735B-FE87-402A-9176-1D1066AB315C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Devices.Web.API.Tests", "Devices.Web.API.Tests\Devices.Web.API.Tests.csproj", "{DAB77A6A-D0E5-483E-97A0-6BCD16437A1D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "db", "db", "{7D609BFD-F184-4DF9-A97B-EA35717F838C}"
+	ProjectSection(SolutionItems) = preProject
+		db\DevicesDB.bak = db\DevicesDB.bak
+		db\Insert Device.sql = db\Insert Device.sql
+		db\Insert DeviceStatus.sql = db\Insert DeviceStatus.sql
+		db\Insert DeviceType.sql = db\Insert DeviceType.sql
+		db\Insert DeviceUsage.sql = db\Insert DeviceUsage.sql
+		db\Script DevicesDB.sql = db\Script DevicesDB.sql
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D5D4F9A2-07BE-46C0-85C4-ABBDCF9528C3}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{432FDCB2-9333-4BEE-91E5-3D9F48361F94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{432FDCB2-9333-4BEE-91E5-3D9F48361F94}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{432FDCB2-9333-4BEE-91E5-3D9F48361F94}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{432FDCB2-9333-4BEE-91E5-3D9F48361F94}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD7B735B-FE87-402A-9176-1D1066AB315C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD7B735B-FE87-402A-9176-1D1066AB315C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD7B735B-FE87-402A-9176-1D1066AB315C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD7B735B-FE87-402A-9176-1D1066AB315C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DAB77A6A-D0E5-483E-97A0-6BCD16437A1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DAB77A6A-D0E5-483E-97A0-6BCD16437A1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DAB77A6A-D0E5-483E-97A0-6BCD16437A1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DAB77A6A-D0E5-483E-97A0-6BCD16437A1D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{432FDCB2-9333-4BEE-91E5-3D9F48361F94} = {480881C6-84C0-48DB-8A08-D56A1E71D0D4}
+		{CD7B735B-FE87-402A-9176-1D1066AB315C} = {480881C6-84C0-48DB-8A08-D56A1E71D0D4}
+		{DAB77A6A-D0E5-483E-97A0-6BCD16437A1D} = {D8BABF33-7834-4A29-95FB-2B1D47BE0CE8}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1F4EA356-FD2A-4D67-B99A-C1CEBB876D90}
+	EndGlobalSection
+EndGlobal

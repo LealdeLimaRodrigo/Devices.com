@@ -1,0 +1,18 @@
+<div *ngFor="let device of devices | filterDeviceByName: devSearch">
+    <div class="row mt-2 mb-2 dev_row_back mx-1" routerLink="/device/{{device.deviceId}}">
+        <div [ngClass]="details? 'col-4 col-sm-3 col-md-2 mt-2 mb-2 text-center' : 'col-3 col-sm-2 col-lg-1 mt-2 mb-2 text-center'">
+            <i [ngClass]="getClass(device.deviceTypeId)"></i>
+        </div>
+        <div [ngClass]="details? 'col-4 col-sm-6 col-md-8 mt-2 mb-2' : 'col-6 col-sm-8 col-lg-10 mt-2 mb-2'">
+            <div class="row dev_font">
+                {{device.name}}
+            </div>
+            <div class="row dev_sec_font">
+                Status: {{device.deviceStatusName}}
+            </div>
+        </div>
+        <div [ngClass]="details? 'col-4 col-sm-3 col-md-2 mt-2 mb-2 text-center' : 'col-3 col-sm-2 col-lg-1 mt-2 mb-2 text-center'">
+            <i *ngIf="!details" class="bi-info-circle-fill icon_font"></i>
+        </div>
+    </div>
+</div>

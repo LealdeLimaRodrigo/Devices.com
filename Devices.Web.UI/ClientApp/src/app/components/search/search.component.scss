@@ -1,0 +1,28 @@
+.search-row-back{
+    background-color: #F0F8FF;
+}
+
+.has-search .form-control{
+    padding-left: 2.375rem;
+}
+
+.has-search .form-control-feedback{
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+}
+
+.button-link {
+    background: none!important;
+    border: none;
+    padding: 0!important;
+    color: #069;
+    text-decoration: none;
+    cursor: pointer;
+}

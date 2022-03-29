@@ -1,0 +1,10 @@
+{
+    "deviceId": 1,
+    "deviceTypeId": 3,
+    "deviceStatusId": 1,
+    "name": "Device 1",
+    "temperature": 10,
+    "deviceTypeName": "Smartphone",
+    "deviceStatusName": "Available",
+    "deviceUsage": null
+}

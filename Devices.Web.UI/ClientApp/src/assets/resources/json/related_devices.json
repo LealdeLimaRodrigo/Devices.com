@@ -1,0 +1,32 @@
+[
+    {
+        "deviceId": 2,
+        "deviceTypeId": 4,
+        "deviceStatusId": 2,
+        "name": "Device 2",
+        "temperature": 25,
+        "deviceTypeName": "Tablet",
+        "deviceStatusName": "Offline",
+        "deviceUsage": null
+    },
+    {
+        "deviceId": 3,
+        "deviceTypeId": 1,
+        "deviceStatusId": 1,
+        "name": "Device 3",
+        "temperature": 40,
+        "deviceTypeName": "Desktop",
+        "deviceStatusName": "Available",
+        "deviceUsage": null
+    },
+    {
+        "deviceId": 4,
+        "deviceTypeId": 3,
+        "deviceStatusId": 1,
+        "name": "Device 4",
+        "temperature": 15,
+        "deviceTypeName": "Smartphone",
+        "deviceStatusName": "Available",
+        "deviceUsage": null
+    }
+]

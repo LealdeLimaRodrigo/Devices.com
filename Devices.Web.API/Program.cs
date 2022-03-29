@@ -1,0 +1,39 @@
+using Devices.Web.API;
+using Devices.Web.API.Repositories;
+using Devices.Web.API.ViewModels.Mapper;
+
+var builder = WebApplication.CreateBuilder(args);
+
+// Add services to the container.
+
+builder.Services.AddControllers();
+// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
+
+builder.Services.AddPersistence(builder.Configuration);
+
+builder.Services.AddScoped<DeviceRepository>();
+builder.Services.AddAutoMapper(typeof(DevicesProfile));
+
+var app = builder.Build();
+
+// Configure the HTTP request pipeline.
+if (app.Environment.IsDevelopment())
+{
+    app.UseSwagger();
+    app.UseSwaggerUI();
+}
+
+app.UseHttpsRedirection();
+
+app.UseCors(x => x.AllowAnyHeader()
+      .AllowAnyMethod()
+      .AllowAnyOrigin());
+      //.WithOrigins("https://localhost:44478/"));
+
+app.UseAuthorization();
+
+app.MapControllers();
+
+app.Run();
